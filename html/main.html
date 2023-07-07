@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- переписал название из проекта -->
+    <!-- COMMENT: переписал название из проекта -->
     <title>Куда Пицца 70к</title>
     <link rel="stylesheet" href="../styles/main.css" />
   </head>
@@ -68,5 +68,123 @@
         </div>
       </div>
     </header>
+    <main class="main">
+      <section class="banner">
+        <div class="wrapper banner__wrapper">
+          <div class="menu-list">
+            <a href="#" class="menu-list__item">
+              <div class="menu-list__icon">
+                <svg width="33" height="32">
+                  <use xlink:href="../assets/menu/Fire.svg#fire"></use>
+                </svg>
+              </div>
+              <span class="menu-list__text">Акции</span>
+            </a>
+            <a href="#" class="menu-list__item">
+              <div class="menu-list__icon">
+                <svg width="33" height="32">
+                  <use xlink:href="../assets/menu/Pizza.svg#pizza"></use>
+                </svg>
+              </div>
+              <span class="menu-list__text">Пицца</span>
+            </a>
+            <a href="#" class="menu-list__item">
+              <div class="menu-list__icon">
+                <svg width="33" height="32">
+                  <use xlink:href="../assets/menu/Sushi.svg#sushi"></use>
+                </svg>
+              </div>
+              <span class="menu-list__text">Суши</span>
+            </a>
+            <a href="#" class="menu-list__item">
+              <div class="menu-list__icon">
+                <svg width="33" height="32">
+                  <use xlink:href="../assets/menu/Drink.svg#drink"></use>
+                </svg>
+              </div>
+              <span class="menu-list__text">Напитки</span>
+            </a>
+            <a href="#" class="menu-list__item">
+              <div class="menu-list__icon">
+                <svg width="33" height="32">
+                  <use xlink:href="../assets/menu/Snacks.svg#snacks"></use>
+                </svg>
+              </div>
+              <span class="menu-list__text">Закуски</span>
+            </a>
+            <a href="#" class="menu-list__item">
+              <div class="menu-list__icon">
+                <svg width="33" height="32">
+                  <use xlink:href="../assets/menu/Combo.svg#combo"></use>
+                </svg>
+              </div>
+              <span class="menu-list__text">Комбо</span>
+            </a>
+            <a href="#" class="menu-list__item">
+              <div class="menu-list__icon">
+                <svg width="33" height="32">
+                  <use xlink:href="../assets/menu/Dessert.svg#dessert"></use>
+                </svg>
+              </div>
+              <span class="menu-list__text">Десерты</span>
+            </a>
+            <a href="#" class="menu-list__item">
+              <div class="menu-list__icon">
+                <svg width="33" height="32">
+                  <use xlink:href="../assets/menu/Sauce.svg#sauce"></use>
+                </svg>
+              </div>
+              <span class="menu-list__text">Соусы</span>
+            </a>
+          </div>
+          <div class="special-offer">
+            <!-- COMMENT: МОЖЕТ ИСПОЛЬЗОВАТЬ ТЕГ ССЫЛКИ -->
+            <div class="special-offer__block special-offer__block--1bg">
+              <p class="special-offer__block-text">
+                3 средние пиццы от 999 рублей
+              </p>
+            </div>
+            <div class="special-offer__block special-offer__block--2bg">
+              <p class="special-offer__block-text">
+                Кэшбек 10% на самовывоз (доставка)
+              </p>
+            </div>
+            <div class="special-offer__block special-offer__block--1bg">
+              <p class="special-offer__block-text">
+                3 средние пиццы от 999 рублей
+              </p>
+            </div>
+            <div class="special-offer__block special-offer__block--2bg">
+              <p class="special-offer__block-text">
+                Кэшбек 10% на самовывоз (доставка)
+              </p>
+            </div>
+          </div>
+          <div class="adress-checked">
+            <!-- CHECK: FORM -->
+            <form action="#" class="adress-checked__form">
+              <fieldset class="adress-checked__fieldset">
+                <label class="adress-checked__check"
+                  >Проверить адрес доставки</label
+                >
+                <!-- <div class="adress-checked__icon">
+                  <svg width="20" height="20">
+                    <use
+                      xlink:href="../assets/adress/Location.svg#adressloc"
+                    ></use>
+                  </svg>
+                </div> -->
+                <input
+                  class="adress-checked__field"
+                  type="text"
+                  placeholder="Адрес"
+                />
+              </fieldset>
+              <button class="adress-checked__btn">Проверить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
