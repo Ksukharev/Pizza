@@ -340,6 +340,7 @@ body {
   background: var(--primary, #ff7010);
 
   border: 0;
+  cursor: pointer;
 
   font-family: " SF Pro Text";
   font-size: 16px;
@@ -387,7 +388,7 @@ body {
   color: var(--black, #191919);
 }
 
-.pizzas__filter {
+.menu-block__filter {
   font-family: "SF Pro Text";
   font-size: 16px;
   font-style: normal;
@@ -416,6 +417,35 @@ body {
   background-color: #fff;
   border-radius: 12px;
   border: 1px solid var(--line-gray, #f0f0f0);
+
+  position: relative;
+}
+
+.menu-block__item--new::after {
+  content: "";
+
+  width: 65px;
+  height: 32px;
+
+  background-image: url(../assets/icons/NEW.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+
+.menu-block__item--hit::after {
+  content: "";
+
+  width: 65px;
+  height: 32px;
+
+  background-image: url(../assets/icons/hit.svg);
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: 0;
+  top: 20px;
 }
 
 .menu-block__item-main {
@@ -488,4 +518,10 @@ body {
 }
 .sushi__wrapper {
   flex-direction: column;
+}
+
+/* section: SNACKS; */
+
+.snacks {
+  margin-top: 48px;
 }
