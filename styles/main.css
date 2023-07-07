@@ -562,3 +562,13 @@ body {
 .sauces__wrapper {
   flex-direction: column;
 }
+
+/* section: combo */
+
+.combo {
+  margin-top: 48px;
+}
+
+.combo__wrapper {
+  flex-direction: column;
+}
