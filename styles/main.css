@@ -367,6 +367,8 @@ body {
   grid-template-rows: 1fr 1fr;
   row-gap: 28px;
   column-gap: 30px;
+  /* COMMENT: правильно ли с авто флоу */
+  grid-auto-flow: row dense;
 
   margin-top: 30px;
 }
@@ -524,4 +526,18 @@ body {
 
 .snacks {
   margin-top: 48px;
+}
+
+.snacks__wrapper {
+  flex-direction: column;
+}
+
+/* SECTION: DESSERT  */
+
+.desserts {
+  margin-top: 48px;
+}
+
+.desserts__wrapper {
+  flex-direction: column;
 }
