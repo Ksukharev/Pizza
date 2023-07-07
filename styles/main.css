@@ -552,3 +552,13 @@ body {
 .drinks__wrapper {
   flex-direction: column;
 }
+
+/* section: sauces  */
+
+.sauces {
+  margin-top: 48px;
+}
+
+.sauces__wrapper {
+  flex-direction: column;
+}
