@@ -413,6 +413,7 @@ body {
 .menu-block__item {
   width: 100%;
   max-width: 300px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
 
@@ -539,5 +540,15 @@ body {
 }
 
 .desserts__wrapper {
+  flex-direction: column;
+}
+
+/* section: DRINKS */
+
+.drinks {
+  margin-top: 48px;
+}
+
+.drinks__wrapper {
   flex-direction: column;
 }
