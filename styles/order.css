@@ -1,0 +1,290 @@
+@import url(./fonts.css);
+@import url(./reset.css);
+
+body {
+  background-color: var(--background-gray, #f9f9f9);
+  /* ADD: потому-что не работает высота в поап */
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  max-width: 1290px;
+
+  margin: 0 auto;
+}
+
+/* section: header  */
+
+.header {
+  width: 100%;
+  height: 64px;
+
+  background-color: #fff;
+}
+
+.header__wrapper {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo__link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav {
+  display: flex;
+}
+
+.header__nav {
+  align-items: center;
+  gap: 32px;
+
+  margin-left: 64px;
+
+  position: relative;
+}
+
+.header__nav-link {
+  font-family: "SF Pro Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+  color: #191919;
+
+  position: relative;
+}
+.header__nav-btn {
+  font-family: "SF Pro Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+  color: #191919;
+
+  position: relative;
+
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+.header__nav-link--add::after {
+  content: "";
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url(../assets/blockMenu/header/addArrow.svg);
+  background-repeat: no-repeat;
+
+  position: absolute;
+  right: -20px;
+  top: 4px;
+}
+
+/* modal window  */
+.modal-header {
+  width: 100%;
+  height: 344px;
+  max-width: 300px;
+  max-height: 344px;
+  position: absolute;
+  top: 42px;
+  right: -135px;
+
+  visibility: hidden;
+
+  background-image: url(../assets/blockMenu/AddWindow/window.svg);
+  background-repeat: no-repeat;
+
+  display: flex;
+}
+
+.modal-header__nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+
+  padding: 26px;
+}
+
+.modal-header__link {
+  font-family: "SF Pro Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+  color: var(--black, #191919);
+}
+
+.shopping-bag {
+  border-radius: 4px;
+  background: var(--primary, #ff7010);
+  padding: 9px 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-left: auto;
+}
+
+.shopping-bag__price {
+  font-family: "SF Pro Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+  color: #fff;
+}
+
+/* section: menu-block */
+
+.main {
+  height: 100%;
+}
+
+.menu-block {
+  width: 100%;
+  height: 100%;
+
+  margin-top: 32px;
+}
+
+.menu-block__wrapper {
+  flex-direction: column;
+}
+
+.menu-block__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-block__heading {
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+
+  color: var(--black, #191919);
+}
+
+.menu-block__filter {
+  font-family: " SF Pro Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+  color: var(--black, #191919);
+
+  border: 0;
+  border-radius: 6px;
+  border: 1px solid var(--line-gray, #f0f0f0);
+  background: #fff;
+
+  padding: 9px 16px 9px 40px;
+  background-image: url(../assets/blockMenu/pizzas/filter.svg);
+  background-repeat: no-repeat;
+  background-position: left 16px top 12px;
+}
+
+.menu-block__list {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 28px;
+
+  margin-top: 32px;
+}
+
+.menu-block__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  border-radius: 12px;
+  border: 1px solid var(--line-gray, #f0f0f0);
+  background: var(--white, #fff);
+}
+
+.menu-block__item-main {
+  padding: 20px;
+}
+
+.menu-block__subheading {
+  font-family: "SF Pro Text";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+
+  color: var(--black, #191919);
+}
+
+.menu-block__text {
+  font-family: "SF Pro Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+  color: var(--black, #191919);
+
+  margin-top: 12px;
+}
+
+.menu-block__end {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 51px;
+}
+
+.menu-block__btn {
+  font-family: "SF Pro Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+
+  color: var(--white, #fff);
+
+  border: 0;
+  border-radius: 6px;
+  background-color: var(--primary, #ff7010);
+
+  padding: 13px 32px;
+}
+
+.menu-block__price {
+  font-family: "SF Pro Text";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+
+  color: var(--primary, #ff7010);
+}
