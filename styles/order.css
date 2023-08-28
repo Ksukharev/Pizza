@@ -288,3 +288,166 @@ body {
 
   color: var(--primary, #ff7010);
 }
+
+/* локация: popup-order  */
+
+.popup-order {
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  background-color: rgba(25, 25, 25, 0.4);
+  backdrop-filter: blur(16px);
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.popup-order__main-block {
+  width: 100%;
+  /* правка: не уверен в правильности установки ширины */
+  max-width: 23%;
+  height: 100%;
+
+  background-color: #fff;
+}
+
+.popup-order__block {
+  width: 100%;
+  height: 100%;
+
+  padding: 20px 32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.popup-order__subheading {
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+
+  color: var(--black, #191919);
+}
+
+.popup-order__item {
+  width: 100%;
+  max-width: 364px;
+  height: 102px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  gap: 16px;
+
+  margin-top: 20px;
+
+  border-radius: 12px;
+  border: 1px solid var(--line-gray, #f0f0f0);
+  background: var(--white, #fff);
+
+  padding: 16px 24px;
+}
+
+.popup-order__item-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.popup-order__item-name {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+
+  color: var(--black, #191919);
+}
+
+.popup-order__item-info {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+
+  margin-top: 8px;
+  color: var(--black, #191919);
+}
+
+.popup-order__count {
+  width: 100%;
+  max-width: 84px;
+  height: 28px;
+
+  border-radius: 6px;
+  background: var(--light-primary, #ffeee2);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 8px;
+  margin-top: 12px;
+}
+
+.popup-order__count-1 {
+  width: 8px;
+  height: 8px;
+
+  background-image: url(../assets/order/Minusminus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: 0;
+  background-color: unset;
+  cursor: pointer;
+}
+
+.popup-order__count-2 {
+  width: 8px;
+  height: 8px;
+
+  background-image: url(../assets/order/Plusplus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border: 0;
+  background-color: unset;
+  cursor: pointer;
+}
+
+.popup-order__quantity {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+
+  color: #ff7010;
+}
+
+.popup__order-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup-order__price {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+
+  color: #ff7010;
+}
